@@ -1,0 +1,26 @@
+
+<canvas id = "canvas"></canvas>
+<script src="script.js"></script>
+<head><title>Primitive swarm pathfinding</title></head>
+<form >
+    <input type="number" min="0" id = "x" placeholder="x of node"/>
+    <input type="number" min = "0" id = "y" placeholder="y of node"/>
+    <button type="button" onclick="addNode()">Add Node</button>
+</form>
+<form >
+    <input type="number" min="0" id = "idA" placeholder="Node A"/>
+    <input type="number" min = "0" id = "idB" placeholder="Node B"/>
+    <input type="text" min="0" id="weight" placeholder="weight">
+    <button type="button" onclick="addEdge()">Add Edge</button>
+    <button type="button" onclick="deleteEdge()">Delete Edge</button>
+</form>
+<form >
+    <p></p>
+    <input type="number" id = "id" min = "0" placeholder="Id of node to delete">
+    <button type="button" onclick="deleteNode()">Delete Node</button>
+</form>
+<button type="button" onclick="example()">Example graph</button>
+<input type="number" min="0" id = "start" placeholder="Start node"/>
+<input type="number" min="0" id = "end" placeholder="End node"/>
+<input type="number" min="0" id = "agentCount" placeholder="Number of agents"/>
+<button type="button" onclick="findPath()">Find path</button>
